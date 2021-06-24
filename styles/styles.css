@@ -36,6 +36,9 @@ footer {
     background-color: #363c44;
     padding: 10px;
 }
+span {
+    color:white;
+}
 .buttons {
     color: #FAF0EA;
     background-color: black;
