@@ -1,7 +1,7 @@
 // import functions
 
 // reference needed DOM elements
-import { add } from "./calculations.js";
+import { add } from './calculations.js';
 
 // set event listeners 
   // get user input(s)
@@ -19,4 +19,53 @@ addBtn.addEventListener('click', ()=>{
     const answer = add(add1, add2);
     console.log(answer);
     addAnswer.textContent = answer;
+});
+
+import { subtract } from './calculations.js';
+
+
+const subInput1 = document.getElementById('sub-num1');
+const subInput2 = document.getElementById('sub-num2');
+const subAnswer = document.getElementById('sub-answer');
+const subBtn = document.getElementById('sub-btn');
+
+subBtn.addEventListener('click', ()=>{
+    console.log(typeof(subInput1.value));
+    const sub1 = Number(subInput1.value);
+    const sub2 = Number(subInput2.value);
+    const answer2 = subtract(sub1, sub2);
+    console.log(answer2);
+    subAnswer.textContent = answer2;
+}); 
+
+import { multiply } from './calculations.js';
+
+const multiInput1 = document.getElementById('multi-num1');
+const multiInput2 = document.getElementById('multi-num2');
+const multiAnswer = document.getElementById('multi-answer');
+const multiBtn = document.getElementById('multi-button');
+
+multiBtn.addEventListener('click', ()=>{
+    console.log(typeof(multiInput1.value));
+    const multi1 = Number(multiInput1.value);
+    const multi2 = Number(multiInput2.value);
+    const answer3 = multiply(multi1, multi2);
+    console.log(answer3);
+    multiAnswer.textContent = answer3;
+});
+
+import { divide } from './calculations.js';
+
+const divInput1 = document.getElementById('div-num1');
+const divInput2 = document.getElementById('div-num2');
+const divAnswer = document.getElementById('div-answer');
+const divBtn = document.getElementById('div-button');
+
+divBtn.addEventListener('click', ()=>{
+    console.log(typeof(divInput1.value));
+    const div1 = Number(divInput1.value);
+    const div2 = Number(divInput2.value);
+    const answer4 = divide(div1, div2);
+    console.log(answer4);
+    divAnswer.textContent = answer4;
 });

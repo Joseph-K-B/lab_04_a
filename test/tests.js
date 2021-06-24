@@ -27,6 +27,16 @@ test('test subtracting', (expect) => {
 
 import { multiply } from '../calculations.js';
 
- test ('test multiply', (expect) => {
-    const expected
+test ('test multiply', (expect) => {
+    const expected = 12;
+    const actual = multiply (6, 2);
+    expect.equal(actual, expected);
+});
+
+import { divide } from '../calculations.js';
+
+test ('test divide', (expect) =>{
+    const expected = 10;
+    const actual = divide (20, 2);
+    expect.equal(actual, expected);
 });
