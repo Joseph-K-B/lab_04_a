@@ -40,3 +40,10 @@ test ('test divide', (expect) =>{
     const actual = divide (20, 2);
     expect.equal(actual, expected);
 });
+import { remainder } from '../calculations.js';
+
+test ('test-remainder', (expect)=> {
+    const expected = 2;
+    const actual = remainder (6, 4);
+    expect.equal(actual, expected);
+});

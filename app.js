@@ -69,3 +69,20 @@ divBtn.addEventListener('click', ()=>{
     console.log(answer4);
     divAnswer.textContent = answer4;
 });
+
+import { remainder } from './calculations.js';
+
+const remInput1 = document.getElementById('rem-number1');
+const remInput2 = document.getElementById('rem-number2');
+const remAnswer = document.getElementById('rem-answer');
+const remBtn = document.getElementById('rem-button');
+
+remBtn.addEventListener('click', ()=>{
+    console.log(typeof(remInput1.value));
+    const rem1 = Number(remInput1.value);
+    const rem2 = Number(remInput2.value);
+    const answer5 = remainder(rem1, rem2);
+    console.log(answer5);
+    remAnswer.textContent = answer5;
+
+});
