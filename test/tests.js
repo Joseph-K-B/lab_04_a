@@ -55,3 +55,11 @@ test ('test integer', (expect)=> {
     const actual = integer (10, 3);
     expect.equal(actual, expected);
 });
+
+import { pyth } from '../calculations.js';
+
+test ('test pyth', (expect)=> {
+    const expected = 8;
+    const actual = pyth (2, 2);
+    expect.equal(actual, expected);
+});

@@ -102,3 +102,19 @@ intBtn.addEventListener('click', ()=>{
     console.log(answer6);
     intanswser.textContent = answer6;
 });
+
+import { pyth } from './calculations.js';
+
+const pythInput1 = document.getElementById('pyth-number1');
+const pythInput2 = document.getElementById('pyth-number2');
+const pythAnswer = document.getElementById('pyth-answer');
+const pyhtBtn = document.getElementById('pyth-button');
+
+pyhtBtn.addEventListener('click', ()=>{
+    console.log(typeof(pythInput1.value));
+    const pyth1 = Number(pythInput1.value);
+    const pyth2 = Number(pythInput2.value);
+    const answer7 = pyth(pyth1, pyth2);
+    console.log(answer7);
+    pythAnswer.textContent = answer7;
+});
