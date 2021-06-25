@@ -86,3 +86,19 @@ remBtn.addEventListener('click', ()=>{
     remAnswer.textContent = answer5;
 
 });
+
+import { integer } from './calculations.js';
+
+const intInput1 = document.getElementById('int-number1');
+const intInput2 = document.getElementById('int-number2');
+const intanswser = document.getElementById('int-answer');
+const intBtn = document.getElementById('int-button');
+
+intBtn.addEventListener('click', ()=>{
+    console.log(typeof(intInput1).value);
+    const int1 = Number(intInput1.value);
+    const int2 = Number(intInput2.value);
+    const answer6 = integer(int1, int2);
+    console.log(answer6);
+    intanswser.textContent = answer6;
+});

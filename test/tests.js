@@ -47,3 +47,11 @@ test ('test-remainder', (expect)=> {
     const actual = remainder (6, 4);
     expect.equal(actual, expected);
 });
+
+import { integer } from '../calculations.js';
+
+test ('test integer', (expect)=> {
+    const expected = 3;
+    const actual = integer (10, 3);
+    expect.equal(actual, expected);
+});
